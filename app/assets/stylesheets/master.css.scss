@@ -1,3 +1,17 @@
+body {
+  background: url('/assets/pw_pattern.png');
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+
+}
+
+.navbar.navbar-inverse {
+  background:url('/assets/escheresque_ste.png');
+  border-radius: 0;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(48,51,56,1);
+  -moz-box-shadow: 0px 1px 3px 0px rgba(48,51,56,1);
+  box-shadow: 0px 1px 3px 0px rgba(48,51,56,1);
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin:0;
   padding:0;
