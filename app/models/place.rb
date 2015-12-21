@@ -1,6 +1,7 @@
 class Place < ActiveRecord::Base
     default_scope ->{ order('created_at DESC') }
     belongs_to :user
+    has_many :comments
     ## geocoder stuff
     geocoded_by :address
     after_validation :geocode
