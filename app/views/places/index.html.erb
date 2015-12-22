@@ -10,14 +10,12 @@
       <br />
       
   <% if place.photos.present? %>
-    <div class="col-xs-12 col-md-4">
-      <% place.photos.each do |photo| %>
-        <div class="picture-box">
+         <% place.photos.each do |photo| %>
+        <div class="picture-box col-xs-12 col-md-4">
         <%= image_tag photo.picture %><br />
         <p><%= photo.caption %></p>
         </div>
       <% end %>
-    </div>
   <% end %>
   
   <% if place.comments.present? %>
