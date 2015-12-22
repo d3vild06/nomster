@@ -7,9 +7,21 @@
     <% if place.user.present? %>
       <small><%= place.user.email %></small>
       <% end %>
+      <br />
+      
+  <% if place.photos.present? %>
+    <div class="col-xs-12 col-md-4">
+      <% place.photos.each do |photo| %>
+        <div class="picture-box">
+        <%= image_tag photo.picture %><br />
+        <p><%= photo.caption %></p>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
   
   <% if place.comments.present? %>
-  <div class="col-xm-12">
+  <div class="col-xs-12">
     <blockquote>
       <% if place.comments.last.humanized_rating.present? %>
       <b><%= place.comments.last.humanized_rating %></b> -
