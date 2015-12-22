@@ -72,11 +72,14 @@ blockquote p {
 
 .picture-box {
   position: relative;
-  width: 100%;
-  max-height: 100%;
+  width: 220px;
+  margin: 20px;
+  
 }
 
 .picture-box img {
+  width: 230px;
+  height: auto;
   border: 10px solid #fff;
   border-bottom: 45px solid #fff;
   -webkit-box-shadow: 3px 3px 3px #777;

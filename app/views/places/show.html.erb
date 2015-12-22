@@ -43,11 +43,13 @@
 
 
     <% @place.photos.each do |photo| %>
-    <div class="picture-box">
+     <div class="picture-box col-xs-12 col-md-4">
       <p><%= photo.caption %></p>
       <%= image_tag photo.picture %>
     </div>
     <% end %>
+    
+</div> <!-- booyah-box container
 
 <div class="clear"></div>
 
@@ -95,6 +97,10 @@
     </div>
   </div>
 </div>
+
+<br />
+
+<div class="clear"></div>
 
 <div class="col-xs-10 col-xs-offset-1">
 <h1 class="pull-left">Comments</h1>
