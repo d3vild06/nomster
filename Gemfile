@@ -48,6 +48,9 @@ gem "geocoder"
 # figaro env vars config
 gem "figaro", ">= 1.0.0"
 
+# file uploader
+gem 'carrierwave'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
