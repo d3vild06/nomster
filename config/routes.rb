@@ -14,11 +14,13 @@ Nomster::Application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-  
+
   resources :places do
     resources :comments, :only => :create
     resources :photos, :only => :create
   end
+
+  resources :users, :only => :show
 
   # Example resource route with options:
   #   resources :products do
